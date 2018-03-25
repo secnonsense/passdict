@@ -8,6 +8,7 @@ positional arguments:
   WORDLIST              Enter a wordlist and its path (Example: /users/joe/words.txt)
 
 optional arguments:
+
   -h, --help            show this help message and exit
   
   -n, --numbers         Substitute 0-9 for any single digit appearing in the words from the wordlist
