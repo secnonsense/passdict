@@ -13,7 +13,7 @@ optional arguments:
   
   -n, --numbers         - Substitute 0-9 for any single digit appearing in the words from the wordlist
   
-  -u, --upperlower      - Subtitute lower/upper letters for each other
+  -u, --upperlower      - Subtitute lower/uppercase letters for each other
   
   -l, --leet            - Use leetspeak substitutions in the generated dictionary
   
