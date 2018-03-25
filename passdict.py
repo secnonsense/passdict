@@ -7,10 +7,10 @@ from itertools import product
 fulldict={}
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-n", "--numbers", help="Substitute 0-9 for any single digit", action="store_true")
-parser.add_argument("-u", "--upperlower", help="Subtitute lower/upper letters for each other", action="store_true")
-parser.add_argument("-l", "--leet", help="Use leetspeak substitutions for dictionary", action="store_true")
-parser.add_argument("-s", "--symbol", help="Specify a custom placeholder for symbol substitution", action="store", dest="symbol")
+parser.add_argument("-n", "--numbers", help=" Substitute 0-9 for any single digit appearing in the words from the wordlist", action="store_true")
+parser.add_argument("-u", "--upperlower", help="Subtitute lower/uppercase letters for each other", action="store_true")
+parser.add_argument("-l", "--leet", help="Use leetspeak substitutions in the generated dictionary", action="store_true")
+parser.add_argument("-s", "--symbol", help="Specify a custom placeholder for symbol substitution and substitute symbols", action="store", dest="symbol")
 parser.add_argument("WORDLIST", help="Enter a wordlist and its path")
 args = parser.parse_args()
 
