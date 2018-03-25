@@ -9,13 +9,13 @@ positional arguments:
 
 optional arguments:
 
-  -h, --help            show this help message and exit
+  -h, --help            - show this help message and exit
   
-  -n, --numbers         Substitute 0-9 for any single digit appearing in the words from the wordlist
+  -n, --numbers         - Substitute 0-9 for any single digit appearing in the words from the wordlist
   
-  -u, --upperlower      Subtitute lower/upper letters for each other
+  -u, --upperlower      - Subtitute lower/upper letters for each other
   
-  -l, --leet            Use leetspeak substitutions in the generated dictionary
+  -l, --leet            - Use leetspeak substitutions in the generated dictionary
   
-  -s SYMBOL, --symbol SYMBOL Specify a custom placeholder for symbol substitution and substitute symbols
+  -s SYMBOL, --symbol SYMBOL - Specify a custom placeholder for symbol substitution and substitute symbols
                         
