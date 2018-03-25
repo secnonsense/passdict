@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import sys, argparse
+import argparse
 from itertools import product
 
 fulldict={}
@@ -31,14 +31,18 @@ numberdict = {'1': '1234567890', '2': '1234567890',
 '3': '1234567890', '4': '1234567890', '5': '1234567890', '6': '1234567890', '7': '1234567890', '8':
 '1234567890', '9': '1234567890', '0': '1234567890'}
 
-if args.leet:
+if args.upperlower:
+    fulldict.update(upperlowerdict)
+
+if args.leet and args.upperlower:
+    for key, value in leetdict.iteritems():
+       if fulldict.get(key, None):
+            fulldict[key]=value+fulldict[key]
+else:
     fulldict.update(leetdict)
 
 if args.symbol:
     fulldict.update(symboldict)
-
-if args.upperlower:
-    fulldict.update(upperlowerdict)
 
 if args.numbers:
     fulldict.update(numberdict)
