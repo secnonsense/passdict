@@ -8,6 +8,7 @@ fulldict={}
 template=[]
 lowyear=1950
 highyear=2019
+ksymbol=''
 
 
 parser = argparse.ArgumentParser()
